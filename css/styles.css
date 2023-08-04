@@ -36,6 +36,7 @@ dl {
  --color-active: #404BBF;
  --color-font-main: #434455;
  --color-border: #E7E9FC;
+ --color-shadow: #2E2F42B2;
 }
 
 body {
@@ -199,9 +200,19 @@ body {
 
 .h1-section {
  background-color: var(--color-heading-primary);
+ background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
+ background-repeat: no-repeat;
  padding: 188px 0;
+ width: 1440px;
+ height: 600px;
+ flex-shrink: 0;
 }
 
+.icon-wrapper-company-values {
+ border-radius: 4px;
+ background: var(--color-contrast-bright);
+ padding: 24px 100px;
+}
 
 .text-h1-first {
  color: var(--color-contrast-brighter);
@@ -286,7 +297,20 @@ body {
  padding-left: 0;
  margin: 0;
  justify-content: space-between;
+}
 
+.icon-wrapper-our-team {
+  display: flex;
+  gap: 24px;
+}
+
+.icon-our-team {
+  fill: var(--color-contrast-dark);
+}
+
+.icon-our-team:hover,
+.icon-our-team:focus {
+  fill: var(--color-active);
 }
 
 .our-team-list-element {
@@ -316,7 +340,7 @@ body {
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.32px;
- margin: 0;
+ margin: 0 0 8px;
 }
 
 
