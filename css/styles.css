@@ -37,6 +37,7 @@ dl {
  --color-font-main: #434455;
  --color-border: #E7E9FC;
  --color-shadow: #2E2F42B2;
+ --color-border-dark: #8E8F99;
 }
 
 body {
@@ -85,6 +86,14 @@ body {
  justify-content: space-between;
 }
 
+.container-footer {
+  display: flex;
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+  gap: 120px;
+ }
+
 .column-container {
  flex-direction: column;
  margin: 0;
@@ -94,6 +103,7 @@ body {
 .column-container-footer {
  flex-direction: column;
  margin: 0;
+ gap: 16px;
 }
 
 
@@ -190,7 +200,16 @@ body {
 }
 
 
-
+.social-footer-font {
+font-family: Roboto;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.32px;
+color: var(--color-contrast-brighter);
+margin: 0;
+padding-bottom: 16px;
+}
 
 
 
@@ -206,6 +225,7 @@ body {
  width: 1440px;
  height: 600px;
  flex-shrink: 0;
+ margin: auto;
 }
 
 .icon-wrapper-company-values {
@@ -289,6 +309,8 @@ body {
 .our-team-section {
  background-color: var(--color-contrast-bright);
  padding: 120px 0;
+ width: 1440px;
+ margin: auto;
 }
 
 .our-team-list {
@@ -353,17 +375,21 @@ body {
  line-height: 1.5;
  letter-spacing: 0.32px;
  max-width: 264px;
+ margin: 0;
 }
 
 .footer-section {
  background-color: var(--color-heading-primary);
  padding: 100px 0;
+ width: 1440px;
+ margin: auto;
 }
 
 .logo-footer  {
  display: inline-block;
- margin: 0 76px 16px 0;
+ margin: 0;
  text-decoration: none;
+ padding-bottom: 16px;
 }
 
 
@@ -419,6 +445,11 @@ body {
  margin: 0;
 }
 
+.portfolio-app-list > li:hover,
+.portfolio-app-list > li:focus {
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
 .app-wrapper {
  padding: 32px 16px;
  border: 1px solid var(--color-border);
@@ -433,4 +464,36 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  padding-left: 0;
+  margin: auto;
+}
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-list-element > svg {
+  border-radius: 4px;
+  border: 1px solid var(--color-border-dark);
+  display: block;
+}
+
+.wrapper-social-footer-icon {
+  flex-direction: row;
+  gap: 16px;
+  padding-left: 0;
+}
+
+.wrapper-social-footer-icon > ul {
+  padding-left: 0;
+  display: flex;
+  margin: 0;
+  gap: 16px;
+  padding-left: 0;
+}
 }
