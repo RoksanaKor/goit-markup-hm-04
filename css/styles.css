@@ -496,3 +496,14 @@ padding-bottom: 16px;
   gap: 16px;
   padding-left: 0;
 }
+
+.icon:focus,
+.icon:hover {
+  fill: var(--color-active);
+}
+
+.icon-footer {
+  fill: pink;
+  stroke:yellow;
+  stroke-width: 2px;
+}
