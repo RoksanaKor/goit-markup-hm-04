@@ -222,17 +222,15 @@ padding-bottom: 16px;
  background-color: var(--color-heading-primary);
  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/people-office.jpg);
  background-repeat: no-repeat;
+ background-position: center;
  padding: 188px 0;
- width: 1440px;
- height: 600px;
- flex-shrink: 0;
- margin: auto;
 }
 
 .icon-wrapper-company-values {
   border-radius: 4px;
   background: var(--color-contrast-bright);
   padding: 24px 100px;
+  margin-bottom: 8px;
  }
 
 .text-h1-first {
@@ -242,6 +240,7 @@ padding-bottom: 16px;
  line-height: 1.07;
  letter-spacing: 1.12px;
  max-width: 496px;
+ margin: 0 0 48px;
 }
 
 .button-order-service {
@@ -287,7 +286,6 @@ padding-bottom: 16px;
 }
 
 
-
 .company-activities {
  padding-bottom: 120px;
 }
@@ -310,8 +308,6 @@ padding-bottom: 16px;
 .our-team-section {
  background-color: var(--color-contrast-bright);
  padding: 120px 0;
- width: 1440px;
- margin: auto;
 }
 
 .our-team-list {
@@ -382,8 +378,7 @@ padding-bottom: 16px;
 .footer-section {
  background-color: var(--color-heading-primary);
  padding: 100px 0;
- width: 1440px;
- margin: auto;
+ 
 }
 
 .logo-footer  {
