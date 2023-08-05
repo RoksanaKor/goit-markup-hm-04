@@ -38,6 +38,7 @@ dl {
  --color-border: #E7E9FC;
  --color-shadow: #2E2F42B2;
  --color-border-dark: #8E8F99;
+ --color-active-footer: #31D0AA;
 }
 
 body {
@@ -229,10 +230,10 @@ padding-bottom: 16px;
 }
 
 .icon-wrapper-company-values {
- border-radius: 4px;
- background: var(--color-contrast-bright);
- padding: 24px 100px;
-}
+  border-radius: 4px;
+  background: var(--color-contrast-bright);
+  padding: 24px 100px;
+ }
 
 .text-h1-first {
  color: var(--color-contrast-brighter);
@@ -477,33 +478,70 @@ padding-bottom: 16px;
   padding: 120px 0;
 }
 
-.customers-list-element > svg {
+.customers-list-element {
   border-radius: 4px;
   border: 1px solid var(--color-border-dark);
   display: block;
 }
 
+.customers-list-element:hover,
+.customers-list-element:focus {
+  border-color: var(--color-active);
+}
+
+.customers-icon {
+  width: 168px;
+  height: 88px;
+  padding: 16px 32px;
+  fill: var(--color-border-dark);
+}
+
+.customers-icon:focus,
+.customers-icon:hover {
+  fill: var(--color-active);
+}
+
 .wrapper-social-footer-icon {
-  flex-direction: row;
   gap: 16px;
   padding-left: 0;
 }
 
 .wrapper-social-footer-icon > ul {
   padding-left: 0;
-  display: flex;
+  display:flex;
   margin: 0;
   gap: 16px;
-  padding-left: 0;
 }
 
-.icon:focus,
-.icon:hover {
-  fill: var(--color-active);
+.circle {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-contrast-dark);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.icon-footer {
-  fill: pink;
-  stroke:yellow;
-  stroke-width: 2px;
+.circle:focus,
+.circle:hover {
+  background-color: var(--color-active);
+}
+
+.circle-footer {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-contrast-dark);
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle-footer:focus,
+.circle-footer:hover {
+  background-color: var(--color-active-footer) ;
 }
