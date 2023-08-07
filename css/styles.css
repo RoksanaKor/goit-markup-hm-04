@@ -482,6 +482,7 @@ padding-bottom: 16px;
 .customers-list-element:hover,
 .customers-list-element:focus {
   border-color: var(--color-active);
+  cursor: pointer;
 }
 
 .customers-icon {
@@ -494,6 +495,7 @@ padding-bottom: 16px;
 .customers-icon:focus,
 .customers-icon:hover {
   fill: var(--color-active);
+  cursor: pointer;
 }
 
 .wrapper-social-footer-icon {
@@ -523,6 +525,7 @@ padding-bottom: 16px;
 .circle:focus,
 .circle:hover {
   background-color: var(--color-active);
+  cursor: pointer;
 }
 
 .circle-footer {
@@ -539,4 +542,10 @@ padding-bottom: 16px;
 .circle-footer:focus,
 .circle-footer:hover {
   background-color: var(--color-active-footer) ;
+  cursor: pointer;
+}
+
+.icon-footer:focus,
+.icon-footer:hover {
+  cursor: pointer;
 }
